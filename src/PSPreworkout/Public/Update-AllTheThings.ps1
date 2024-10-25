@@ -258,7 +258,7 @@ function Update-AllTheThings {
             }
             if (Get-Command apt -ErrorAction SilentlyContinue) {
                 Write-Host '[5] Updating dnf packages.'
-                sudo apt dnf
+                sudo dnf update
             }
         } else {
             Write-Verbose '[5] Not Linux. Skipping section.'
